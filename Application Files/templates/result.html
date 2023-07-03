@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result</title>
+    <style>
+      /* CSS for the navbar */
+      body {
+        background-image: url("../static/index6bg.jpeg");
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        margin: 10px;
+      }
+      nav {
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      li {
+        margin-left: 10px;
+      }
+
+      li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 16px;
+      }
+
+      .buttons {
+        display: flex;
+      }
+
+      .buttons li {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="buttons">
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="upload">Predict</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content of the page -->
+    <p
+      style="
+        border: solid 1px black;
+        background-color: rgb(63, 63, 63);
+        text-align: left;
+        padding: 10px;
+        font-size: 18px;
+      "
+    >
+      Parkinson Detection
+    </p>
+    <p style="font-size: 50px; color: black"><b>Parkinson Classifier</b></p>
+    <p>Prediction: {{result}}</p>
+  </body>
+</html>
